@@ -1,9 +1,8 @@
+/bootstrap/compiled.php
+/vendor
+composer.phar
+composer.lock
+.env.local.php
+.env.php
 .DS_Store
-
-application/cache/*
-!application/cache/index.html
-!application/cache/.htaccess
-
-application/logs/*
-!application/logs/index.html
-!application/logs/.htaccess
+Thumbs.db
