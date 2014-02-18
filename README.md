@@ -15,14 +15,14 @@ Create an account at http://openshift.redhat.com/
 
 Create a php application with mysql (you can call your application whatever you want)
 
-    rhc app create ci php-5.3 mysql-5.1
+    rhc app create laravel php-5.3 mysql-5.1
 
 Add this upstream Laravel repo
 
-    cd ci
+    cd laravel
     git remote add upstream -m master git://github.com/nematix/laravel-openshift.git
     git pull -s recursive -X theirs upstream master
-    # note that the git pull above can be used later to pull updates to CI
+    # note that the git pull above can be used later to pull updates to Laravel
     
 Then push the repo upstream
 
@@ -30,6 +30,6 @@ Then push the repo upstream
 
 That's it, you can now checkout your application at:
 
-    http://ci-$yournamespace.rhcloud.com
+    http://laravel-$yournamespace.rhcloud.com
 
 
